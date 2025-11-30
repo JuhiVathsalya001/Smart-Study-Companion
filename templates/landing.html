@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Study Companion</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleo.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9b5b6c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="top-right">
+    <a href="#features" class="glass-btn"><div class="glass-title">Features</div></a>
+    <a href="#how" class="glass-btn"><div class="glass-title">How It Works</div></a>
+
+    <a href="/focus" class="glass-btn primary" id="btn-focus" aria-label="Open Focus Room">
+      <div class="glow"></div>
+      <div class="glass-title">Open Focus Room</div>
+    </a>
+  </div>
+<section id="hero">
+  <h1 class="focus-text">Smart Study Companion</h1>
+  <h3 class="subtitle">One click focus, your study buddy</h3>
+
+  <div class="scroll-down">
+    <i class="fa-solid fa-angle-down"></i>
+  </div>
+</section>
+
+  <section id="features" class="content-section">
+    <h2>Features</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <i class="fa-solid fa-bullseye"></i>
+        <h3>Focus Room</h3>
+        <p>Enter a distraction-free study space with timers, background sounds, and task tracking.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Progress Insights</h3>
+        <p>Track your daily productivity and visualize your consistency effortlessly.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-brain"></i>
+        <h3>AI Study Partner</h3>
+        <p>Get personalized tips and study recommendations from your AI buddy.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Smart Scheduler</h3>
+        <p>Organize your day with AI-generated study plans that adapt to your habits.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="content-section">
+    <h2>How It Works</h2>
+    <div class="steps-container">
+      <div class="step-card">
+        <span class="step-number">1</span>
+        <h3>Open Focus Room</h3>
+        <p>Click “Open Focus Room” to start your personalized study environment instantly.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">2</span>
+        <h3>Set Your Goals</h3>
+        <p>Enter your study goals, subjects, and time preferences to tailor your session.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">3</span>
+        <h3>Study Smarter</h3>
+        <p>Focus with built-in timers, ambient sounds, and real-time motivation feedback.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">4</span>
+        <h3>Track & Improve</h3>
+        <p>Check analytics, consistency charts, and smart suggestions after each session.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="{{ url_for('static', filename='js/scripto.js') }}"></script>
+</body>
+</html>
