@@ -240,15 +240,10 @@ def analyze_frame():
 
 @app.route("/end_session", methods=["POST"])
 def end_session():
-    """
-    Robust end_session: tolerates race conditions (multiple requests),
-    missing session ids and always returns a well-formed JSON response.
-    """
     try:
         data = request.get_json(silent=True) or {}
         session_id = data.get("session_id")
 
-    
         if not session_id:
             return jsonify({"error": "missing session_id"}), 400
 
