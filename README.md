@@ -19,7 +19,7 @@ The application uses a webcam to detect engagement, mobile-phone usage, blinking
 
 ---
 
-##  Tech Stack
+## 🛠️ Tech Stack
 
 * **Python**
 * **Flask**
@@ -33,7 +33,7 @@ The application uses a webcam to detect engagement, mobile-phone usage, blinking
 
 ---
 
-##  How It Works
+## How It Works
 
 ```text
 Webcam
@@ -101,9 +101,19 @@ Ultralytics
 NumPy
 ```
 
-## 4. Add the Required Models
+---
 
-Create a `models` folder in the project root:
+## 4. Download the Required Models
+
+The trained model files are **not included directly in this GitHub repository** because some of the files exceed GitHub's file upload limit.
+
+The required model files are available in the following Google Drive folder:
+
+👉 **[Download the required models from Google Drive](https://drive.google.com/drive/folders/1FCKFRiEl4Lvxs1SJ5zi-iAWXtErip7j7?usp=drive_link)**
+
+Download the models and place them inside a `models` folder in the project root.
+
+The required structure is:
 
 ```text
 Smart-Study-Companion/
@@ -120,7 +130,9 @@ Smart-Study-Companion/
 └── README.md
 ```
 
-The application expects these model files inside the `models/` directory.
+**Important:** The application will not work correctly without the required model files.
+
+---
 
 ## 5. Configure Admin Credentials
 
@@ -128,7 +140,7 @@ The feedback page uses environment variables for administrator authentication.
 
 ### Windows CMD
 
-```cmd
+```bash
 set ADMIN_USERNAME=admin
 set ADMIN_PASSWORD=your_password
 ```
@@ -141,6 +153,8 @@ $env:ADMIN_PASSWORD="your_password"
 ```
 
 Do **not** commit your password to GitHub.
+
+---
 
 ## 6. Run the Application
 
@@ -172,7 +186,7 @@ Allow webcam access when prompted.
 
 ---
 
-## 📊 Session Metrics
+## Session Metrics
 
 The application tracks metrics such as:
 
@@ -191,7 +205,7 @@ The application tracks metrics such as:
 ```text
 Smart-Study-Companion/
 │
-├── models/
+├── models/                         # Download separately
 │   ├── student_engagement_modelCNN.h5
 │   ├── yolov8n.pt
 │   └── haarcascade_frontalface_default.xml
@@ -216,13 +230,14 @@ Smart-Study-Companion/
 
 * A working webcam is required for real-time monitoring.
 * Detection accuracy can be affected by lighting, camera angle, and occlusion.
-* ML model files must be available in the `models/` directory.
+* The required ML model files must be downloaded separately and placed inside the `models/` directory.
+* The model files are hosted externally because of GitHub's file-size restrictions.
 * The application is currently intended for **local use**.
 * The system is a productivity tool and is **not a medical or psychological assessment**.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Historical study analytics
 * Daily and weekly productivity tracking
@@ -235,7 +250,7 @@ Smart-Study-Companion/
 
 ---
 
-##  Author
+## Author
 
 **Juhi Vathsalya Kothapalli**
 
